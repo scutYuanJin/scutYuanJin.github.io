@@ -4,24 +4,11 @@
   
     
     <entry>
-      <title>如何快速搭建一个自己的博客（开心）</title>
-      <link href="/2022/04092270.html"/>
-      <url>/2022/04092270.html</url>
+      <title>我的第一篇博客之如何快速搭建一个自己的博客</title>
+      <link href="/2022/040910898.html"/>
+      <url>/2022/040910898.html</url>
       
-        <content type="html"><![CDATA[<h1 id="如何快速搭建一个自己的博客呢"><a href="#如何快速搭建一个自己的博客呢" class="headerlink" title="如何快速搭建一个自己的博客呢"></a>如何快速搭建一个自己的博客呢</h1><h2 id="首先应该"><a href="#首先应该" class="headerlink" title="首先应该"></a>首先应该</h2><h2 id="然后我们要"><a href="#然后我们要" class="headerlink" title="然后我们要"></a>然后我们要</h2><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><h2 id="好开心啊"><a href="#好开心啊" class="headerlink" title="好开心啊"></a>好开心啊</h2>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2022/04090.html"/>
-      <url>/2022/04090.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="怎么创建自己的博客呢"><a href="#怎么创建自己的博客呢" class="headerlink" title="怎么创建自己的博客呢"></a>怎么创建自己的博客呢</h1><p>接下来小编就带着大家一起来创建一个博客看看是怎么回事</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="如何快速搭建一个自己的博客"><a href="#如何快速搭建一个自己的博客" class="headerlink" title="如何快速搭建一个自己的博客"></a>如何快速搭建一个自己的博客</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>最近一直在思考应该用一种什么样的方式来做笔记，同时又可以将笔记和大家一起分享，于是就想到了可以用做一个博客的方式和uu们一起互动。可是要自己做一个网站的话从前后端制作到部署上线，就目前而言我实在是抽不出那么多的时间，于是通过查询资料我发现了原来有一种快速搭建自己博客的方式。<br>接下来我就将这种方式分享给大家，希望能对大家有所帮助。<br>（同时也是对自己搭建过程的记录哈哈）  </p><h2 id="1、Nodejs和Git的环境的搭建"><a href="#1、Nodejs和Git的环境的搭建" class="headerlink" title="1、Nodejs和Git的环境的搭建"></a>1、Nodejs和Git的环境的搭建</h2><ul><li><a href="https://blog.csdn.net/qq_48485223/article/details/122709354?spm=1001.2014.3001.5502">Nodejs的搭建教程</a>  <ul><li>安装过程中需要注意的点：<br> （1） npm install express -g 在安装的时候需要用管理用的权限运行才能安装成功，简单的cmd打开的黑框或者是终端是不行的。<br> （2）全程都需要按教程操作，包括镜像源，不然下载是很慢的。</li></ul></li><li><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git的搭建教程</a><ul><li>安装过程中需要注意的点：<br>  （1）全程跟着这个教程就好</li></ul></li></ul><h2 id="2、注册Github账号并且创建自己的仓库"><a href="#2、注册Github账号并且创建自己的仓库" class="headerlink" title="2、注册Github账号并且创建自己的仓库"></a>2、注册Github账号并且创建自己的仓库</h2><ul><li><a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=2">Github账号的创建和自己仓库的创建</a></li></ul><h2 id="3、生成秘钥SSH"><a href="#3、生成秘钥SSH" class="headerlink" title="3、生成秘钥SSH"></a>3、生成秘钥SSH</h2><h3 id="1"><a href="#1" class="headerlink" title="(1)"></a>(1)</h3>]]></content>
       
       
       
