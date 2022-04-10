@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何搭建自己的博客, 会编程的小狐狸">
+    <meta name="keywords" content="Markdown的使用语法, 会编程的小狐狸">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何搭建自己的博客 | 会编程的小狐狸</title>
+    <title>Markdown的使用语法 | 会编程的小狐狸</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -247,12 +247,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何搭建自己的博客</h1>
+                    <h1 class="description center-align post-title">Markdown的使用语法</h1>
                 </div>
             </div>
         </div>
@@ -368,23 +368,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">博客</span>
+                            <a href="/tags/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">基本语法学习</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E5%AD%A6/" class="post-category">
-                                博客教学
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -417,184 +408,155 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="如何快速搭建一个自己的博客"><a href="#如何快速搭建一个自己的博客" class="headerlink" title="如何快速搭建一个自己的博客"></a>如何快速搭建一个自己的博客</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>最近一直在思考怎么样才能更好地将自己所学的知识保存和记录下来，还能和大家一起讨论。于是就想到了可以用博客的方式和uu们一起互动。可是要自己做一个网站的话从前后端的制作到部署上线，就目前而言我实在是抽不出那么多的时间，于是通过查询资料我发现了原来有一种快速搭建自己博客的方式。<br>接下来我就将这种方式分享给大家，希望能对大家有所帮助。<br>（同时也是对自己搭建过程的记录哈哈，如果有不对的地方还请大家及时指出）  </p>
-<h2 id="1、Nodejs和Git的安装和配置"><a href="#1、Nodejs和Git的安装和配置" class="headerlink" title="1、Nodejs和Git的安装和配置"></a>1、Nodejs和Git的安装和配置</h2><h3 id="1-1-Nodejs的安装和配置"><a href="#1-1-Nodejs的安装和配置" class="headerlink" title="1.1 Nodejs的安装和配置"></a>1.1 Nodejs的安装和配置</h3><h4 id="（1）首先打开Nodejs的官网，进入下载页面"><a href="#（1）首先打开Nodejs的官网，进入下载页面" class="headerlink" title="（1）首先打开Nodejs的官网，进入下载页面"></a>（1）首先打开Nodejs的官网，进入下载页面</h4><ul>
-<li><p><a target="_blank" rel="noopener" href="http://nodejs.cn/download">Nodejs官网链接</a></p>
-</li>
-<li><p>点击指定位置下载msi文件</p>
-
-</li>
-<li><p>点击msi文件进行安装</p>
-</li>
-<li><p>一直点击下一步，直到出现安装目录时，可以点击change更改目录，记住这个目录。  </p>
-
-<p> 我的安装目录为 D:\Develop\nodejs</p>
-</li>
-</ul>
-<h4 id="（2）验证是否安装成功"><a href="#（2）验证是否安装成功" class="headerlink" title="（2）验证是否安装成功"></a>（2）验证是否安装成功</h4><ul>
-<li>按住win+R,出现“运行”窗口，输入“cmd”后点击确定，进入命令行窗口。</li>
-<li>分别输入 node -v 和cpm -v 查看版本号，如果出现类似的页面说明安装成功。</li>
-</ul>
-<h4 id="（3）修改全局模块下的安装路径"><a href="#（3）修改全局模块下的安装路径" class="headerlink" title="（3）修改全局模块下的安装路径"></a>（3）修改全局模块下的安装路径</h4><ul>
-<li>全局模块的默认安装和缓存路径位于<br>C:&#x2F;Users&#x2F;[username]&#x2F;AppData&#x2F;Roaming&#x2F;npm&#x2F;node_modules<br>一般来说大家不希望C盘被填的太满，所以我们需要改变安装和缓存路径到其他盘。<br>这里我们选择放在node.js的安装路径下。</li>
-<li>打开Nodejs的安装路径，新建node_global和node_cache两个空文件夹。<img src="/2022/041057685/nodejs7.png" class=""></li>
-<li>按住win+R,输入cmd打开命令行窗口，依次输入命令，改变全局模块的安装路径和缓存路径为我们新建立的文件夹。  （双引号里为自己的路径）<br>npm config set prefix “ D:\Develop\nodejs\node_global”<br>npm config set cache  “ D:\Develop\nodejs\node_cache”</li>
-</ul>
-<h4 id="4-环境变量的修改"><a href="#4-环境变量的修改" class="headerlink" title="(4)环境变量的修改"></a>(4)环境变量的修改</h4><ul>
-<li><p>打开win10左下的搜索框，输入“系统环境变量”，打开。</p>
-<img src="/2022/041057685/nodejs8.png" class="">
-<img src="/2022/041057685/nodejs9.png" class="">
-</li>
-<li><p>修改用户的环境变量。将点击用户变量中的Path,然后进入编辑页面。</p>
-<img src="/2022/041057685/nodejs11.png" class=""></li>
-<li><p>将红色箭头指向的的内容删掉，然后自己新建一个路径，指向之前所建立的node_global文件夹（如下面红色和蓝色箭头所示）。</p>
-<img src="/2022/041057685/nodejs12.png" class=""></li>
-<li><p>修改系统的环境变量。<br>在系统变量中点击新建，变量名为NODE_PATH，变量值为<br>D:\Develop\nodejs\node_global\node_modules</p>
-<img src="/2022/041057685/nodejs13.png" class="">
-<img src="/2022/041057685/nodejs14.png" class="">
-<p>随后打开系统变量下的Path，新增以下两个内容</p>
-<img src="/2022/041057685/nodejs15.png" class="">
-<p>完成了以上的内容后，nodejs下载和缓存的内容就会放在我们建立的两个文件夹中。</p>
-</li>
-</ul>
-<h4 id="（5）测试是否安装成功"><a href="#（5）测试是否安装成功" class="headerlink" title="（5）测试是否安装成功"></a>（5）测试是否安装成功</h4><ul>
-<li>按前面的方法，打开命令行，输入下面的命令<br>npm install express -g</li>
-</ul>
-<p>-g是全局安装的意思，不加 -g 就是默认下载到当前目录。</p>
+                <h1 id="Markdown的使用语法"><a href="#Markdown的使用语法" class="headerlink" title="Markdown的使用语法"></a>Markdown的使用语法</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Markdown是一款轻量级的语言，很多网络论坛和博客都会使用Markdown语言来书写。<br>它有以下几个优点  </p>
 <ul>
-<li><p>若出现下面的报错，是因为未使用管理员的方式打开，此时可以在搜索框输入cmd后，右键选择以管理员方式打开，再输入上面的命令。便可安装成功（如下图）。</p>
-<img src="/2022/041057685/nodejs16.png" class="">
-<img src="/2022/041057685/nodejs17.png" class="">
-<img src="/2022/041057685/nodejs18.png" class="">
+<li>可以很轻易的通过符号的方式，对文本进行格式化</li>
+<li>可以在不同的平台进行移植，只要大家都支持Markdown就好啦</li>
+</ul>
+<p>那么接下来，大家就跟着我的步伐，一起来学习一下Markdown的使用语法吧。走起！！</p>
+<h2 id="支持Markdown语法的编辑器"><a href="#支持Markdown语法的编辑器" class="headerlink" title="支持Markdown语法的编辑器"></a>支持Markdown语法的编辑器</h2><p>工欲善其身必先利其器，首先我们要找到一款可以支持显示Markdown效果的编辑器，这样我们才能在编辑的过程中看到最终的效果。<br>这里我推荐的是我经常使用的Vscode，因为它不仅是一款免费的编辑器，而且在各种插件的帮助下你可以很轻易地实现很多你想要的功能。</p>
+<h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="1、标题"><a href="#1、标题" class="headerlink" title="1、标题"></a>1、标题</h3><ul>
+<li>标题的话主要是通过在文字前面加#来实现，总共有六级。<br>  示范：  <pre class="line-numbers language-none"><code class="language-none"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  效果如下：<br>  （为了不影响目录效果，一二级标题就不展示了）<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+<h3 id="2、字体的变化"><a href="#2、字体的变化" class="headerlink" title="2、字体的变化"></a>2、字体的变化</h3><ul>
+<li><p>加粗，左右分别用**扩住<br>  示范：  </p>
+  <pre class="line-numbers language-none"><code class="language-none">** 123456**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  效果如下：<br>  <strong>123456</strong>  </p>
 </li>
-<li><p>若出现以下的错误，则是因为文件夹的权限未打开。是由于权限的原因，右击Nodejs文件夹-&gt;属性-&gt;安全，点击编辑，将所有权限都✔即可。</p>
-<img src="/2022/041057685/nodejs19.png" class="">
+<li><p>倾斜，左右分别用*扩住<br>  示范：  </p>
+  <pre class="line-numbers language-none"><code class="language-none">*这是一个简单的示范*<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  效果如下：<br>  <em>这是一个简单的示范</em></p>
 </li>
-<li><p>安装成功后，在目录D:\Develop\nodejs\node_global\node_modules 中会发现express文件夹。</p>
+<li><p>删除线，左右分别用~~扩住<br>  示范：  </p>
+  <pre class="line-numbers language-none"><code class="language-none">~~这是一个简单的示范~~<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  效果如下：<br>  <del>这是一个简单的示范</del></p>
 </li>
 </ul>
-<h4 id="6-更改npm的源为淘宝的镜像源"><a href="#6-更改npm的源为淘宝的镜像源" class="headerlink" title="(6)更改npm的源为淘宝的镜像源"></a>(6)更改npm的源为淘宝的镜像源</h4><ul>
-<li><p>由于npm 默认的 registry ,也就是下载 npm 包时是从国外的服务器下载，国内很慢，所以为了下载方便我们一般都会指向淘宝 <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org./">https://registry.npm.taobao.org。</a></p>
+<h3 id="3、引用的方法"><a href="#3、引用的方法" class="headerlink" title="3、引用的方法"></a>3、引用的方法</h3><ul>
+<li>在引用的文件前面加上&gt;就可以了<br>  示范：    <pre class="line-numbers language-none"><code class="language-none">&gt;这是一个简单的示范
+&gt;&gt;这还是一个示范 #这个是引用里面的引用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+  效果如下：  <blockquote>
+<p>这是一个简单的示范 </p>
+<blockquote>
+<p>这还是一个示范</p>
+</blockquote>
+</blockquote>
 </li>
-<li><p>用之前的方法打开命令行（以管理员身份运行）</p>
-</li>
-<li><p>先查看自己的npm源<br>npm config get registry</p>
-<img src="/2022/041057685/nodejs20.png" class="">
-</li>
-<li><p>输入以下代码更改为淘宝镜像源<br>npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a></p>
-</li>
-<li><p>再次输入查看npm源是否更改成功<br>npm config get registry<br>出现以下内容则为成功。</p>
-<img src="/2022/041057685/nodejs20.png" class=""></li>
 </ul>
-<h4 id="（7）全局安装淘宝的cnpm"><a href="#（7）全局安装淘宝的cnpm" class="headerlink" title="（7）全局安装淘宝的cnpm"></a>（7）全局安装淘宝的cnpm</h4><ul>
-<li><p>由于npm的服务器在海外，所以访问速度比较慢，访问不稳定 ，cnpm的服务器是由淘宝团队提供 服务器在国内cnpm是npm镜像，一般会同步更新，相差在10分钟，所以cnpm在安装一些软件时候会比较有优势。但是一般cnpm只用于安装时候，所以在项目创建与卸载等相关操作时候我们还是使用npm。</p>
+<h3 id="4、分割线"><a href="#4、分割线" class="headerlink" title="4、分割线"></a>4、分割线</h3><ul>
+<li><p>分割线用— *** 都可以<br>  示范：  </p>
+  <pre class="line-numbers language-none"><code class="language-none">分割线一号
+***
+分割线二号
+---
+但是第二种分割线会把上面的内容强行变成二级标题。所以推荐用第一种***<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  效果如下：</p>
+<p>  分割线一号</p>
+<hr>
+<p>  分割线二号</p>
+<hr>
 </li>
-<li><p>以管理员身份运行命令行，输入以下代码<br>npm install -g cnpm –registry&#x3D;<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
-<img src="/2022/041057685/nodejs21.png" class="">
-</li>
-<li><p>如同之前一样，我们需要为cnpm添加环境变量。<br>打开系统环境变量，新建以下内容。</p>
-<img src="/2022/041057685/nodejs22.png" class=""></li>
 </ul>
-<p>打开系统环境变量中的Path,添加箭头中的内容。</p>
-<img src="/2022/041057685/nodejs24.png" class="">
+<h3 id="5、插入图片"><a href="#5、插入图片" class="headerlink" title="5、插入图片"></a>5、插入图片</h3><p>对于图片的显示而言，如果需要多方都能看见，最好是能将图片上传到云服务器上（图床），这个我们以后再讲。<br>语法格式：  </p>
+<pre class="line-numbers language-none"><code class="language-none">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)
+
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示范：  </p>
+<pre class="line-numbers language-none"><code class="language-none">![beautiful lady](https:&#x2F;&#x2F;gimg2.baidu.com&#x2F;image_search&#x2F;src&#x3D;http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201907%2F27%2F20190727122215_mtfxn.jpeg&amp;refer&#x3D;http%3A%2F%2Fc-ssl.duitang.com&amp;app&#x3D;2002&amp;size&#x3D;f9999,10000&amp;q&#x3D;a80&amp;n&#x3D;0&amp;g&#x3D;0n&amp;fmt&#x3D;auto?sec&#x3D;1652183602&amp;t&#x3D;09f20c0c6247349bf89dae3328cb25c4, &quot;古风美女&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>效果如下： </p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201907%2F27%2F20190727122215_mtfxn.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652183602&t=09f20c0c6247349bf89dae3328cb25c4," alt="beautiful_lady" title="古风美女"></p>
+<h3 id="6、超链接"><a href="#6、超链接" class="headerlink" title="6、超链接"></a>6、超链接</h3><ul>
+<li><p>超链接的格式和图片比较类似<br>  示范：  </p>
+  <pre class="line-numbers language-none"><code class="language-none">[百度](https:&#x2F;&#x2F;www.baidu.com&#x2F;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  效果如下：<br><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+</li>
+<li><p>但是Markdown本身不支持打开一个新页面，如果希望打开新页面的话可以采取html中的a标签的形式。<br>  示范：</p>
+  <pre class="line-numbers language-none"><code class="language-none">    &lt;a href&#x3D;&quot;超链接地址&quot; target&#x3D;&quot;_blank&quot;&gt;超链接名&lt;&#x2F;a&gt;
+
+
+    &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;1f5ac0cf6a8b&quot; target&#x3D;&quot;_blank&quot;&gt;简书&lt;&#x2F;a&gt;
+    ~~~  
+    效果如下： 
+     
+    &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;1f5ac0cf6a8b&quot; target&#x3D;&quot;_blank&quot;&gt;简书&lt;&#x2F;a&gt; 
+
+### 7、列表
+- 列表的话分为有序列表和无序列表，一般采用-,+或者*都可以。（注意有空格）   
+    示范：  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  列表的演示：</p>
 <ul>
-<li>最后在命令行中输入cnpm -v ，若出现版本号则为安装成功。<img src="/2022/041057685/nodejs25.png" class=""></li>
+<li>123</li>
 </ul>
-<p>到此Nodejs的安装就算是完成了。我们进入到下一步。</p>
-<h3 id="1-2-Git的安装和配置"><a href="#1-2-Git的安装和配置" class="headerlink" title="1.2 Git的安装和配置"></a>1.2 Git的安装和配置</h3><p>Git的搭建可以按照下面的教程进行<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git搭建的教程</a></p>
-<h2 id="2、GitHub的注册和个人仓库的搭建"><a href="#2、GitHub的注册和个人仓库的搭建" class="headerlink" title="2、GitHub的注册和个人仓库的搭建"></a>2、GitHub的注册和个人仓库的搭建</h2><h3 id="（1）如何快速进入GitHub"><a href="#（1）如何快速进入GitHub" class="headerlink" title="（1）如何快速进入GitHub"></a>（1）如何快速进入GitHub</h3><ul>
-<li>由于Github是国外的网站，所以访问起来速度会比较慢，这里提供了三种方法，让国内的用户也能快速访问Github.com。<br><a href="">快速访问GitHub的方法，链接待补充</a></li>
-</ul>
-<h3 id="（2）如何注册自己的github账号"><a href="#（2）如何注册自己的github账号" class="headerlink" title="（2）如何注册自己的github账号"></a>（2）如何注册自己的github账号</h3><ul>
-<li>登录网站 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a> （最好提前完成上面Github的加速，不然的话会很慢很慢）  </li>
-<li>点击右上角sign up 进行注册</li>
-</ul>
-<img src="/2022/041057685/g1.png" class="">
-
 <ul>
-<li>填写相关的内容<img src="/2022/041057685/g2.png" class=""></li>
-<li>这之后github会给你的邮箱发一个验证信息，填写验证信息就可以完成注册了<img src="/2022/041057685/g3.png" class="">
-<img src="/2022/041057685/g4.png" class=""></li>
+<li>123</li>
 </ul>
-<h2 id="3、创建个人的仓库"><a href="#3、创建个人的仓库" class="headerlink" title="3、创建个人的仓库"></a>3、创建个人的仓库</h2><ul>
-<li>点击首页的new 进入创建仓库页面<img src="/2022/041057685/g5.png" class="">
-<img src="/2022/041057685/g6.png" class=""></li>
-<li>完成上述内容后 ,github仓库就算是创建成功了，接下来你的博客的内容将会保存在这个位置。</li>
-</ul>
-<h2 id="4、SSH的设置"><a href="#4、SSH的设置" class="headerlink" title="4、SSH的设置"></a>4、SSH的设置</h2><p>SSH全称是Secure shell，实际上就是一个为建立在应用层基础上的安全协议。SSH 是较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。</p>
 <ul>
-<li><p>随意打开一个文件夹，右键，选择 Git Bash here打开窗口，输入ssh查看是否安装（一般是在前面安装git的时候就已经安装成功了的），然后会出现以下页面。</p>
-<img src="/2022/041057685/g7.png" class="">
-
-</li>
-<li><p>继续输入 SSH-keygen -t rsa -C “你的注册时候填的邮箱”，然后按四下回车键。出现以下的界面说明成功了。(注意几个空格的位置)</p>
-<img src="/2022/041057685/g8.png" class="">
-</li>
-<li><p>找到地址 C:\Users\你的用户.ssh，用记事本打开id_rsa.pub文件 将其中的全部内容复制（可以快捷键 crtl+a全选 然后ctrl+c）。</p>
-
-<img src="/2022/041057685/g11.png" class="">
-</li>
-<li><p>打开自己的github主页，点击右上角三角形然后找到setting</p>
-<img src="/2022/041057685/g12.png" class="">
-</li>
-<li><p>按照图片的内容依次进行选择</p>
-<img src="/2022/041057685/g13.png" class="">
-<img src="/2022/041057685/g14.png" class="">
-<img src="/2022/041057685/g15.png" class="">
-<img src="/2022/041057685/g16.png" class="">
-<img src="/2022/041057685/g17.png" class="">
-
-</li>
-<li><p>接下来检验一下ssh是否绑定成功了，返回到git bash here命令行， 输入 ssh -T git@github，接着出现以下一面，输入yes即可。  </p>
-<img src="/2022/041057685/g18.png" class="">
-</li>
-<li><p>最后出现successful说明博客成功。</p>
-</li>
+<li>123<br>  列表的嵌套</li>
 </ul>
-<h2 id="5、个人博客的搭建"><a href="#5、个人博客的搭建" class="headerlink" title="5、个人博客的搭建"></a>5、个人博客的搭建</h2><ul>
-<li><p>建立一个自己的博客文件夹，存放博客相关的内容，比如我建立了一个myfirstblog.  </p>
-<img src="/2022/041057685/g19.png" class="">
-</li>
-<li><p>以管理员身份运行命令行，然后输入以下命令安装hexo。<br>npm install -g hexo</p>
-</li>
-<li><p>输入 hexo init 对博客进行初始化（可能由于网络问题会比较慢，多试几次），出现下面画面就是成功了。</p>
-<img src="/2022/041057685/g20.png" class="">
-<p>此时myfirstblog文件夹中会出现下面这些内容，这是把别人github的项目克隆了下来。</p>
-<img src="/2022/041057685/g21.png" class=""></li>
-<li><p>接下来输入 hexo s 就可以打开一个本地的服务器，出现一个网址，将这个网址复制下来在浏览器中打开就可以见到你自己的博客啦！！(注意复制的时候不要按ctrl+c，这个是关闭服务器)</p>
-<img src="/2022/041057685/g22.png" class="">
-<img src="/2022/041057685/g23.png" class=""></li>
-</ul>
-<h2 id="6、如何将博客发布到互联网上"><a href="#6、如何将博客发布到互联网上" class="headerlink" title="6、如何将博客发布到互联网上"></a>6、如何将博客发布到互联网上</h2><p>上一步我们已经成功运行了自己的服务器了，然而这只是在本地运行的，只有自己能看到，那如何才能让别人也能在互联网上访问到我们的博客呢，接下来我们应该怎么做？</p>
 <ul>
-<li><p>首先打开自己博客根目录中的_config.yml文件，我的路径是<br>D:\Archive\Myfirstblog_config.yml</p>
-<img src="/2022/041057685/g24.png" class="">
+<li>123</li>
+<li>123<ul>
+<li>123  <pre class="line-numbers language-none"><code class="language-none">    列表的演示：
+    + 123 
+    - 123
+    * 123  
+    列表的嵌套
+    + 123
+        + 123
+            + 123
 
-</li>
-<li><p>找到deploy并且将配置修改为</p>
-<pre class="line-numbers language-none"><code class="language-none">deploy:
-  type: git
-  repo: https:&#x2F;&#x2F;github.com&#x2F;scutYuanJin&#x2F;scutYuanJin.github.io.git 
-  branch: main #这里一定要main才能正常上传<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/2022/041057685/g25.png" class="">
-<p>其中repo需要的是自己仓库的地址，找到仓库的位置复制网址过来就可以了。<br>注意: 和后面内容有个小空格。</p>
-</li>
-<li><p>安装hexo的一键部署工具。以管理员的身份运行命令行，输入<br> npm install hexo-deployer-git –save</p>
-<img src="/2022/041057685/g26.png" class=""></li>
-<li><p>进入myfirstblog文件夹，右键打开git bash here，输入<br>hexo g<br>这是生成页面的命令</p>
-</li>
-<li><p>执行完成后，输入<br>hexo d 进行上传（刚刚安装的hexo-deployer-git就是用在这一步 ）</p>
-</li>
-<li><p>之后会弹出以下页面，输入github的用户名和密码</p>
-<img src="/2022/041057685/g27.png" class="">
-<img src="/2022/041057685/g28.png" class="">
-</li>
-<li><p>之后出现 deploy done : git说明上传成功</p>
-</li>
-<li><p>到此为止，你的博客就真正的创建成功了，你的小伙伴们也能通过网址搜索到你的博客啦。那么访问博客的网址是什么呢？其实就是你的仓库的名字。比如我的网址就是  <a href="https://scutyuanjin.github.io/%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E5%89%8D%E6%9D%A5%E8%A7%82%E7%9C%8B%E3%80%82">https://scutyuanjin.github.io/，欢迎大家前来观看。</a></p>
+- 数字加点也是列表的一种方式  
+
+### 8、表格的效果
+语法：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+表头A|表头B|表头C</li>
+</ul>
 </li>
 </ul>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>最后的最后嘛，希望这篇博客可以给大家带来帮助哦，如果有不对的地方也请各位及时指出。接下来的话也会出一些关于如何给博客使用主题以及如何美化博客的内容。感谢大家的观看！！笔芯！！</p>
+</li>
+</ul>
+<p>-|:-:|-:<br>内容A|内容B|内容C</p>
+<pre class="line-numbers language-none"><code class="language-none">示范：<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="center">学号</th>
+<th align="right">联系方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>李白</td>
+<td align="center">001</td>
+<td align="right">123456</td>
+</tr>
+<tr>
+<td>杜甫</td>
+<td align="center">002</td>
+<td align="right">456789</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-none"><code class="language-none">
+姓名|学号|联系方式
+-|:-:|-:
+李白|001|123456
+杜甫|002|456789
+
+### 9、代码
+语法：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>单行代码：<br><code>abc</code><br>多行代码：两边用三个~括起来(下面示范的时候加上了\，真正使用的时候没有)<br>~~~<br>abc<br>def<br>~~~</p>
+<pre class="line-numbers language-none"><code class="language-none">效果如下：  
+&#96;abc&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>abc<br>def</p>
+<p>~~~</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>以上就是关于Markdown语法的简单使用方法，后续如果有更多实用的语法的话我也会补充在这里的哟~，如果有不对的地方还请各位大佬及时指正。感谢您的观看！</p>
 
                 
             </div>
@@ -621,7 +583,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://scutyuanjin.github.io/2022/041057685.html">https://scutyuanjin.github.io/2022/041057685.html</a>
+                    <a href="https://scutyuanjin.github.io/2022/041061579.html">https://scutyuanjin.github.io/2022/041061579.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -659,8 +621,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">博客</span>
+                                <a href="/tags/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">基本语法学习</span>
                                 </a>
                             
                         </div>
@@ -1093,9 +1055,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/041061579.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Markdown的使用语法">
+                        
+                        <span class="card-title">Markdown的使用语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            会编程的小狐狸
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">基本语法学习</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/041030969.html">
                     <div class="card-image">
@@ -1113,9 +1122,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1127,56 +1136,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/041057685.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="如何搭建自己的博客">
-                        
-                        <span class="card-title">如何搭建自己的博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E5%AD%A6/" class="post-category">
-                                    博客教学
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
-                    </a>
-                    
                 </div>
                 
             </div>
