@@ -418,22 +418,22 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="如何快速搭建一个自己的博客"><a href="#如何快速搭建一个自己的博客" class="headerlink" title="如何快速搭建一个自己的博客"></a>如何快速搭建一个自己的博客</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>最近一直在思考怎么样才能更好地将自己所学的知识保存和记录下来，还能和大家一起讨论。于是就想到了可以用博客的方式和uu们一起互动。可是要自己做一个网站的话从前后端的制作到部署上线，就目前而言我实在是抽不出那么多的时间，于是通过查询资料我发现了原来有一种快速搭建自己博客的方式。<br>接下来我就将这种方式分享给大家，希望能对大家有所帮助。<br>（同时也是对自己搭建过程的记录哈哈，如果有不对的地方还请大家及时指出）  </p>
-<h2 id="1、Nodejs和Git的安装和配置"><a href="#1、Nodejs和Git的安装和配置" class="headerlink" title="1、Nodejs和Git的安装和配置"></a>1、Nodejs和Git的安装和配置</h2><h3 id="1-1-Nodejs的安装和配置"><a href="#1-1-Nodejs的安装和配置" class="headerlink" title="1.1 Nodejs的安装和配置"></a>1.1 Nodejs的安装和配置</h3><h4 id="（1）首先打开Nodejs的官网，进入下载页面"><a href="#（1）首先打开Nodejs的官网，进入下载页面" class="headerlink" title="（1）首先打开Nodejs的官网，进入下载页面"></a>（1）首先打开Nodejs的官网，进入下载页面</h4><ul>
+<h2 id="1、Nodejs和Git的安装和配置"><a href="#1、Nodejs和Git的安装和配置" class="headerlink" title="1、Nodejs和Git的安装和配置"></a>1、Nodejs和Git的安装和配置</h2><h3 id="1-1-Nodejs的安装和配置"><a href="#1-1-Nodejs的安装和配置" class="headerlink" title="1.1 Nodejs的安装和配置"></a>1.1 Nodejs的安装和配置</h3><h4 id="（1）进入Nodejs的官网下载"><a href="#（1）进入Nodejs的官网下载" class="headerlink" title="（1）进入Nodejs的官网下载"></a>（1）进入Nodejs的官网下载</h4><ul>
 <li><p><a target="_blank" rel="noopener" href="http://nodejs.cn/download">Nodejs官网链接</a></p>
 </li>
 <li><p>点击指定位置下载msi文件</p>
-
+<img src="/2022/041057685/nodejs1.png" class="">
 </li>
 <li><p>点击msi文件进行安装</p>
-</li>
+<img src="/2022/041057685/nodejs3.png" class=""></li>
 <li><p>一直点击下一步，直到出现安装目录时，可以点击change更改目录，记住这个目录。  </p>
-
+<img src="/2022/041057685/nodejs4.png" class="">
 <p> 我的安装目录为 D:\Develop\nodejs</p>
 </li>
 </ul>
 <h4 id="（2）验证是否安装成功"><a href="#（2）验证是否安装成功" class="headerlink" title="（2）验证是否安装成功"></a>（2）验证是否安装成功</h4><ul>
-<li>按住win+R,出现“运行”窗口，输入“cmd”后点击确定，进入命令行窗口。</li>
-<li>分别输入 node -v 和cpm -v 查看版本号，如果出现类似的页面说明安装成功。</li>
+<li>按住win+R,出现“运行”窗口，输入“cmd”后点击确定，进入命令行窗口。<img src="/2022/041057685/nodejs5.png" class=""></li>
+<li>分别输入 node -v 和cpm -v 查看版本号，如果出现类似的页面说明安装成功。<img src="/2022/041057685/nodejs6.png" class=""></li>
 </ul>
 <h4 id="（3）修改全局模块下的安装路径"><a href="#（3）修改全局模块下的安装路径" class="headerlink" title="（3）修改全局模块下的安装路径"></a>（3）修改全局模块下的安装路径</h4><ul>
 <li>全局模块的默认安装和缓存路径位于<br>C:&#x2F;Users&#x2F;[username]&#x2F;AppData&#x2F;Roaming&#x2F;npm&#x2F;node_modules<br>一般来说大家不希望C盘被填的太满，所以我们需要改变安装和缓存路径到其他盘。<br>这里我们选择放在node.js的安装路径下。</li>
